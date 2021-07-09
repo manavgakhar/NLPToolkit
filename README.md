@@ -1,8 +1,6 @@
 # NLPToolkit
 
-## This toolkit is built on Flair NLP. 
-
-## It can perform :
+## This toolkit is built on Flair NLP. It can perform :
 - Sentiment Analysis
 - Part of Speech Tagging
 - Named Entity Recognition
