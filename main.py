@@ -13,6 +13,8 @@ toolk = nlpToolkit()
 
 if(sent != "" and option == "Sentiment Analysis"):
     try:
+        st.write("please wait....")
+        st.write("")
         result = toolk.sentiment(sent)
         st.write("The sentiment is: " + str(result[0]))
     except:
@@ -20,6 +22,8 @@ if(sent != "" and option == "Sentiment Analysis"):
 
 if(sent != "" and option == "Named Entity Recognition"):
     try:
+        st.write("please wait....")
+        st.write("")
         result = toolk.ner(sent)
         st.text("The recognised entities are: " + str(result[1]))
     except:
@@ -27,6 +31,8 @@ if(sent != "" and option == "Named Entity Recognition"):
 
 if(sent != "" and option == "Part of Speech Tagging"):
     try:
+        st.write("please wait....")
+        st.write("")
         result = toolk.pos(sent)
         st.write("The POS tags are: " + str(result[1]))
     except:
