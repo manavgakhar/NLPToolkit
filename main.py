@@ -2,7 +2,7 @@ import streamlit as st
 from sentiment import nlpToolkit
 
 st.image("data/logo.png",width=None)
-st.markdown(" ## This toolkit is based on pre-trained transformers so processing might take some time lol.")
+st.markdown(" ## This toolkit is based on pre-trained transformers so processing might take some time.")
 
 
 option = st.selectbox('Which feature would you like to use?',('Sentiment Analysis','Part of Speech Tagging','Named Entity Recognition'))
