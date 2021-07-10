@@ -1,9 +1,9 @@
 # NLPToolkit
 
 ## This toolkit is built on Flair NLP. It can perform :
-- Sentiment Analysis
-- Part of Speech Tagging
-- Named Entity Recognition
+- Sentiment Analysis (DistilBERT)
+- Part of Speech Tagging (LSTM)
+- Named Entity Recognition (LSTM)
 
 ### The app is running at - https://share.streamlit.io/manavgakhar/nlptoolkit/main/main.py
 
