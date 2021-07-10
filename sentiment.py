@@ -1,5 +1,6 @@
 import flair
 import re
+import streamlit as st
 
 class nlpToolkit:
 
