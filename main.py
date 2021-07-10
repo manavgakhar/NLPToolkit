@@ -27,7 +27,7 @@ if(sent != "" and option == "Named Entity Recognition"):
         slot.text("please wait....")
         st.write("")
         result = toolk.ner(sent)
-        slot.text("The recognised entities are: " + str(result[1]))
+        slot.write("The recognised entities are: " + str(result[1]))
     except:
         st.text("Invalid input. Please try again.")
 
@@ -37,6 +37,6 @@ if(sent != "" and option == "Part of Speech Tagging"):
         slot.text("please wait....")
         st.write("")
         result = toolk.pos(sent)
-        slot.text("The POS tags are: " + str(result[1]))
+        slot.write("The POS tags are: " + str(result[1]))
     except:
         st.text("Invalid input. Please try again.")
