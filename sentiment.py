@@ -16,7 +16,8 @@ class nlpToolkit:
 		text = re.sub("[^-9A-Za-z ]", "" , text)
 
 		return text
-
+	
+	@st.cache()
 	def sentiment(self,sentence):
 
 		try:
@@ -31,7 +32,7 @@ class nlpToolkit:
 			print("flair sentiment error")
 			return
 
-
+	@st.cache()
 	def pos(self,sentence):
 		try:
 			# make a sentence
@@ -54,7 +55,7 @@ class nlpToolkit:
 			return
 
 
-
+	@st.cache()
 	def ner(self,sentence):
 		try:
 			# make a sentence
