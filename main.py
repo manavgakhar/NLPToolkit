@@ -13,10 +13,11 @@ toolk = nlpToolkit()
 
 if(sent != "" and option == "Sentiment Analysis"):
     try:
-        st.write("please wait....")
+        slot = st.empty()
+        slot.text("please wait....")
         st.write("")
         result = toolk.sentiment(sent)
-        st.write("The sentiment is: " + str(result[0]))
+        slot.text("The sentiment is: " + str(result[0]))
     except:
         st.text("Invalid input. Please try again.")
 
