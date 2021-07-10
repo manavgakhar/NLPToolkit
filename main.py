@@ -23,18 +23,20 @@ if(sent != "" and option == "Sentiment Analysis"):
 
 if(sent != "" and option == "Named Entity Recognition"):
     try:
-        st.write("please wait....")
+        slot = st.empty()
+        slot.text("please wait....")
         st.write("")
         result = toolk.ner(sent)
-        st.text("The recognised entities are: " + str(result[1]))
+        slot.text("The recognised entities are: " + str(result[1]))
     except:
         st.text("Invalid input. Please try again.")
 
 if(sent != "" and option == "Part of Speech Tagging"):
     try:
-        st.write("please wait....")
+        slot = st.empty()
+        slot.text("please wait....")
         st.write("")
         result = toolk.pos(sent)
-        st.write("The POS tags are: " + str(result[1]))
+        slot.text("The POS tags are: " + str(result[1]))
     except:
         st.text("Invalid input. Please try again.")
