@@ -61,7 +61,7 @@ class nlpToolkit:
 			sentence = flair.data.Sentence(sentence)
 
 			# load the NER tagger
-			tagger = flair.models.SequenceTagger.load('ner-english')
+			tagger = flair.models.SequenceTagger.load('flair/ner-english')
 
 			tagger.predict(sentence)
 
